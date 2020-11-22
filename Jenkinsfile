@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sshagent(['deploy_user1']) {
+		sshagent(['ubuntu_user']) {
    		sh "scp -o StrictHostKeyChecking=no webapp/target/Devops-1.0-SNAPSHOT.war ubuntu@18.233.225.48:8080:/opt/apache-tomcat-8.5.60/webapps"
 }
             }
