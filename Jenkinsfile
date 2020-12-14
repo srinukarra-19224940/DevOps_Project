@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
 		sshagent(['ubuntu_user']) {
-   		sh "scp -o StrictHostKeyChecking=no target/Devops-1.0-SNAPSHOT.war ubuntu@18.233.225.48:/opt/apache-tomcat-8.5.60/webapps"
+   		sh "scp -o StrictHostKeyChecking=no target/Devops-1.0-SNAPSHOT.war ubuntu@54.158.52.129:/opt/apache-tomcat-8.5.60/webapps"
 }
             }
         }
