@@ -19,7 +19,7 @@
    <body>
       <div class="container">
          <h1>Welcome To Cricket Fever</h1>
-         <p>Click on below buttons</p>
+         <p>Below buttons are used for CRUD</p>
          <br>
          <br>
          <!-- Crud operation -->
